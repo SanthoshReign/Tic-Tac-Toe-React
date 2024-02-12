@@ -1,0 +1,12 @@
+.resetButton{
+    margin-top: 50px;
+    color: hsl(0, 0%, 100%);
+    background: hsl(198, 100%, 33%);
+    font-size: 1.5em;
+    padding: 20px;
+    width: 100%;
+    border: none;
+}
+.resetButton:hover{
+    background: hsl(198, 100%, 23%);
+}

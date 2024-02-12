@@ -1,0 +1,63 @@
+.strike{
+    /* striking winner pattern is on the tiles 
+    Therefore, we need position the skrike line on
+    the tiles. so make position of line "absolute"*/
+    position: absolute;
+    background: hsl(33, 100%, 50%);
+}
+/*ROW STRIKE*/
+.strike-row-1{
+    /* striking 1st row if winning pattern in 1st row*/
+    width: 100%; /*100% of his parent width 
+    i.e. Board 100px+100px+100px totally 300px is 100%*/
+    height: 4px;
+    top: 15%; /* 15% of his parent i.e. Board height 300px. 
+    Therefore, 15% of 300px is 45px from top*/
+}
+.strike-row-2{
+    width: 100%;
+    height: 4px;
+    top: 48%;  /*48% of 300px is 144px*/
+}
+.strike-row-3{
+    width: 100%;
+    height: 4px;
+    top: 83%; /*83% of 300px is 249px*/
+}
+
+/*COLUMN STRIKE*/
+.strike-column-1{
+    height: 100%; /*same concept as row, 100% of his parent height ie 300px*/
+    width: 4px;
+    left: 15%;
+}
+.strike-column-2{
+    height: 100%;
+    width: 4px;
+    left: 48%;
+}
+.strike-column-3{
+    height: 100%;
+    width: 4px;
+    left: 83%;
+}
+
+/*DIAGONAL STRIKE*/
+.strike-diagonal-left{
+    width: 90%;
+    height: 4px;
+    top: 50%;
+    left: 5%;
+    /*transform skew is a property used to change the degree of straight line 
+    or any diagram eg. 45 deg means diagonal line*/
+    transform: skewY(45deg);
+}
+.strike-diagonal-right{
+    width: 90%;
+    height: 4px;
+    top: 50%;
+    left: 5%;
+    /*transform skew is a property used to change the degree of straight line 
+    or any diagram eg. -45 deg means diagonal line in opposite direction*/
+    transform: skewY(-45deg);
+}
