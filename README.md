@@ -8,7 +8,7 @@ This is a small project so i used 'prop drilling' but 'useContext' hook is recom
 -------------------------------------------------------------------------------------------
 App Look:
 --------
-TicTacToeApp.png
+<img src="./TicTacToeApp.png"/>
 
 playerXWinState.png
 
